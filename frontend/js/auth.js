@@ -1,7 +1,6 @@
 const API_URL = "http://localhost:5000/api/auth";
 
 
-// REGISTER
 const registerForm =
   document.getElementById("registerForm");
 
@@ -50,7 +49,7 @@ if (registerForm) {
 }
 
 
-// LOGIN
+
 const loginForm =
   document.getElementById("loginForm");
 

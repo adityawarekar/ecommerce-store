@@ -5,7 +5,7 @@ const Order = require("../models/Order");
 const router = express.Router();
 
 
-// CREATE ORDER
+
 router.post("/", async (req, res) => {
   try {
     const order = await Order.create(req.body);
@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
 });
 
 
-// GET ALL ORDERS
+
 router.get("/", async (req, res) => {
   try {
     const orders = await Order.find()
@@ -35,7 +35,7 @@ router.get("/", async (req, res) => {
 });
 
 
-// GET SINGLE ORDER
+
 router.get("/:id", async (req, res) => {
   try {
     const order = await Order.findById(req.params.id)
